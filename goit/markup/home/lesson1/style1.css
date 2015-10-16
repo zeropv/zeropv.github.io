@@ -26,11 +26,13 @@ margin: 0 auto;
 .header {
 	text-align: center;
 	font-size: 18px;
-	margin-top:30px;
 	margin-bottom: 20px; 
+	padding-top: 1px;
 }
 .header .container{
-	width: 80%;
+	
+	
+	background: #eee;
 }
 
 .header h1{
