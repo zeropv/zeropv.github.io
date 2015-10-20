@@ -1,8 +1,8 @@
-/**/
-/* * {
-	border-style: solid;
-	border-width: 1px;
-} */
+
+  /* * {
+   	border-style: solid;
+   	border-width: 1px;
+   } */ 
 body{
 	background: #eee;
 }
@@ -13,6 +13,10 @@ h2{
 	text-align: left;
 	font-weight: bold;
 	font-size: 20px;
+}
+.splitter {
+	width: 80%;
+	margin: 0 auto;
 }
 .main {
 	width: 515px;
@@ -25,9 +29,7 @@ h2{
 	text-align: left;
 	margin: 0 auto;
 }
-.main .container {
-/*	margin: 0 auto;*/
-}
+
 .header {
 	text-align: center;
 	font-size: 18px;
