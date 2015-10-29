@@ -1,0 +1,78 @@
+html {
+	height: 100%;
+}
+/*header*/
+body{
+	background:url('../img/background.jpg') center center no-repeat;
+	background-size: cover;
+	font-family: Tahoma;
+	color: #fff;
+
+	height: 100%;
+}
+.wrapper {
+	position: relative;
+	width: 815px;
+	margin:0 auto;
+	height: 100%;
+}
+.header{
+	position: relative;
+	overflow:hidden;
+	vertical-align: bottom; 
+}
+.logo {
+	float: left;
+	
+}
+.contacts {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	float:right;
+	color: white;
+	margin-bottom: 20px;
+}
+
+/*content*/
+.container {
+	margin: 10px auto;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+
+}
+.promo {
+	float: left;
+	text-align: center;
+	margin: 20px 0px 20px 7px;
+}
+
+.shadow {
+	position: relative;
+	overflow: hidden;
+	width: 254px;
+	height: 172px;
+	padding: 3px;
+}
+.shadow:hover{
+	-webkit-box-shadow: inset 0px 0px 3px 3px rgba(171,171,171,1);
+	-moz-box-shadow: inset 0px 0px 3px 3px rgba(171,171,171,1);
+	box-shadow: inset 0px 0px 3px 3px rgba(171,171,171,1);
+}
+.shadow  img{
+	width: 100%;
+}
+.title a {
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	font-size: 11px;
+	text-align: center;
+}
