@@ -1,41 +1,35 @@
 body{
-	
 	font-family: Tahoma;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#14cde1+0,53cbf1+20,0c73a0+100 */
-background: #14cde1; /* Old browsers */
-background: -moz-linear-gradient(top,  #14cde1 0%, #53cbf1 20%, #0c73a0 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#14cde1), color-stop(20%,#53cbf1), color-stop(100%,#0c73a0)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', endColorstr='#0c73a0',GradientType=0 ); /* IE6-9 */
-
+	background: #14cde1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #14cde1 0%, #53cbf1 20%, #0c73a0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#14cde1), color-stop(20%,#53cbf1), color-stop(100%,#0c73a0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', endColorstr='#0c73a0',GradientType=0 ); /* IE6-9 */
 }
-
 .background1{
 	position: absolute;
 	width: 100%;
 	height: 46px;
 	background: #128aa7;
-	/*z-index: -1*/
 }
 .background2{
 	position: absolute;
 	width: 100%;
 	height: 147px;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#14cde1+0,14cee2+0,ffffff+100 */
-background: #14cde1; /* Old browsers */
-background: -moz-linear-gradient(top,  #14cde1 0%, #14cee2 0%, #ffffff 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#14cde1), color-stop(0%,#14cee2), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #14cde1 0%,#14cee2 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #14cde1 0%,#14cee2 0%,#ffffff 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #14cde1 0%,#14cee2 0%,#ffffff 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #14cde1 0%,#14cee2 0%,#ffffff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-
+	background: #14cde1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #14cde1 0%, #14cee2 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#14cde1), color-stop(0%,#14cee2), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #14cde1 0%,#14cee2 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #14cde1 0%,#14cee2 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #14cde1 0%,#14cee2 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #14cde1 0%,#14cee2 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 	margin-top: 46px;
-	/*z-index: -1;*/
 }
 .background3{
 	width: 100%;
@@ -51,11 +45,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', end
 	background: white;
 	border: 1px solid #000;
 	z-index: 10;
-	/*-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);*/
-	/*-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);*/
 	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
 }
-
 .header_head{
 	position: relative;
 	width: 100%;
@@ -77,30 +68,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', end
  	text-align: right;
  	float: right;
  	margin-right: 10px;
- 	
- 	 }
+}
 .contacts {
-	/*display: inline-block;*/
-	/*float:right;*/
-	/*position: absolute;*/
-	/*left:17px;*/
-	/*right: 10px;*/
 	font-size: 12px;
 	color: #5fa5bb;
 	margin:14px;
 	text-align: right;
-	
 }
 .countries{
-	/*float: right;*/
-	/*position:absolute;*/
-	/*right: 10px;*/
-	/*left: 10px;*/
-	/*bottom: 0px;*/
-	/*margin-top: 120px;*/
 	text-align: center;
 	margin: 50px 0 0 0 ;
-
 }
 .countries li{
 	display: inline-block;
@@ -108,7 +85,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', end
 }
 .countries a{
 	color: #5fa5bb;
-
 }
 .title {
 	font-size: 10px;
@@ -118,27 +94,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', end
 	top:192px;
 }
 .menu{
-	/*border: 1px solid #000;*/
 	position: relative;
 	background:#343434;
 	z-index: 200;
-	
 }
 .nav{
-	/*float:left;*/
 	width:100%;
 	list-style:none;
-	/*border: 1px solid #000;*/
 }
-
 .nav li{
 	float:left;
-	/*padding-left: 35px;
-	padding-right:35px;*/
 	position:relative;
 	display:block;
-	/*border: 1px solid #000;*/
-
 }
 .nav li a{
 	display:block;
@@ -147,22 +114,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', end
 	background:#343434;
 	text-decoration:none;
 	font-size: 14px;
-	
-
-	
-	/*text-shadow:1px 1px 1px rgba(0,0,0,0.75);  Тень текста, чтобы приподнять его на немного 
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
-	border-radius:2px;*/
-}
-
-.nav li a:hover{
-	/*color:red;*/
-
-	/*text-decoration:underline;*/
-	/*background:#6b0c36;*/
-	/*background:rgba(107,12,54,0.75); /* Выглядит полупрозрачным */*/
-	
 }
 
 /*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
@@ -170,15 +121,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', end
 	list-style:none;
 	position:absolute;
 	display: none;
-	/*left:-9999px;*/ /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
-	/*opacity:0;*/ /* Устанавливаем начальное состояние прозрачности */
-	/*-webkit-transition:0.25s linear opacity;*/ /* В Webkit выпадающие пункты будут проявляться */
 }
 
 .nav ul li{
-	/*padding-top:1px;*/ /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
 	float:none;
-	/*background:url(dot.gif);*/
 }
 .nav ul a{
 	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
@@ -187,36 +133,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', end
 .nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
 	display: block;
 	border-top: 1px solid #000;
-	/*border: 1px solid #000;*/
 	-webkit-box-shadow: 0px 3px 10px #343434;
    /* -moz-box-shadow: 0 0 30px #969696;
     box-shadow: 0 0 30px #969696;*/
-
-	/*left:0;*/ /* Приносим его обратно на экран, когда нужно */
-	/*opacity:1;*/ /* Делаем непрозрачным */
 }
-.nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
-	/*background:#6b0c36;
-	background:rgba(107,12,54,0.75);*/ /* Выглядит полупрозрачным */
-	/*text-decoration:underline;*/
-}
-.nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
-	/*text-decoration:none;*/
-	/*-webkit-transition:-webkit-transform 0.075s linear;*/
-}
-.nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
-	/*background:#333;*/
-	/*background:rgba(51,51,51,0.75); /* Будет полупрозрачным */*/
-	/*text-decoration:underline;*/
-	/*-moz-transform:scale(1.05);*/
-	/*-webkit-transform:scale(1.05);*/
-}
-.clearfix{
-	content: '';
-	clear:both;
-	display: block;
-}
-
 .content{
 	padding: 20px 0;
 	position: relative;
@@ -227,7 +147,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', end
 .container {
 	margin:0 auto;
 	width: 90%;
-
 }
 .col1{
 	position: relative;
@@ -235,17 +154,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', end
 	float: left;
 }
 .col2{
-	
 	position: relative;
 	width: 580px;
 	float: left;
 }
 .col3{
-	
 	position: relative;
 	width: 210px;
 	float: right;
-
 }
 .footer{
 	margin: 20px auto;
