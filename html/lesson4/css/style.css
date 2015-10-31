@@ -133,7 +133,7 @@ body{
 	width: 100%;
 	background: url('../img/fon1.png') repeat-y;
 	float: left;
-	overflow: visible;
+	
 }
 .container {
 	margin:0 auto;
