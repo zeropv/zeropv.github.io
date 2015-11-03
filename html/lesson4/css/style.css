@@ -1,15 +1,19 @@
+html{
+	/*background: linear-gradient(to bottom, #eaeeef 0%,#2cafe3 100%); /* W3C */*/
+}
 body{
 	font-family: Tahoma;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#14cde1+0,53cbf1+20,0c73a0+100 */
-	background: #14cde1; /* Old browsers */
-	background: -moz-linear-gradient(top,  #14cde1 0%, #53cbf1 20%, #0c73a0 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#14cde1), color-stop(20%,#53cbf1), color-stop(100%,#0c73a0)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', endColorstr='#0c73a0',GradientType=0 ); /* IE6-9 */
-}
+	/*background: #14cde1; /* Old browsers */*/
+	/*background: -moz-linear-gradient(top,  #14cde1 0%, #53cbf1 20%, #0c73a0 100%); /* FF3.6+ */*/
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#14cde1), color-stop(20%,#53cbf1), color-stop(100%,#0c73a0)); /* Chrome,Safari4+ */*/
+	/*background: -webkit-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* Chrome10+,Safari5.1+ */*/
+	/*background: -o-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* Opera 11.10+ */*/
+	/*background: -ms-linear-gradient(top,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* IE10+ */*/
+	/*background: linear-gradient(to bottom,  #14cde1 0%,#53cbf1 20%,#0c73a0 100%); /* W3C */*/
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14cde1', endColorstr='#0c73a0',GradientType=0 ); /* IE6-9 */*/
+/*background: linear-gradient(to bottom, #eaeeef 0%,#2cafe3 100%); /* W3C */*/
+}	
 .background1{
 	position: absolute;
 	width: 100%;
@@ -164,7 +168,7 @@ body{
 	float: right;
 }
 .footer{
-	margin: 20px auto;
+	/*margin: 20px auto;*/
 	text-align: center;
 	font-size: 10px;
 	color:#fff;
