@@ -11,11 +11,13 @@
 }
 html{
 	height: 100%;
-	font-family: "Helvetica Heue";
+	font-family: "Helvetica Heue", sans-serif ;
 	color: white
 }
 body{
 	height: 100%;
+	background: url('../img/background.jpg') no-repeat center center ;
+	background-size:cover;
 	
 }
 .clearfix:after{
@@ -29,11 +31,13 @@ body{
 	width: 100%;
 }
 .header {
+	display: block;
 	color:#fff;
+	overflow: hidden;
 	position: relative;
-	height:36px;
-	width: 100%;
-	background: url('../img/bg1.png');
+	/*height:36px;*/
+	/*width: 100%;*/
+	background: url('../img/bg1.png') 0 0 repeat;
 	z-index: 1;
 
 }
@@ -46,25 +50,26 @@ body{
 .header ul li{
 	display: inline-block;
 	padding: 0 10px;
-	border:1px solid rgba(69,154,212,0);
+	/*border:1px solid rgba(69,154,212,0);*/
+	border:1px solid transparent;
 }
 .header img{
 	float:left;
 	margin-top: 5px;
 }
 .header a{
+	display: inline-block;
 	font-size: 14px;
 	line-height: 34px;
 	color: #fff;
 	text-decoration: none;
 	padding:0 10px;
-	line-height: 34px;
-	
+		
 }
 .header .menu1  a{
 	color:#60b5ed;
 }
-.header li:hover{
+.header li:hover, .active{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#51b1dc+0,2e7ac4+100 */
 	background: #51b1dc; /* Old browsers */
 	background: -moz-linear-gradient(top,  #51b1dc 0%, #2e7ac4 100%); /* FF3.6+ */
@@ -76,62 +81,82 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
 	border:1px solid rgba(69,154,212,1);
 }
-.header .menu2 li:hover a{
-	text-decoration: underline;
-}
-.header .menu1 li:hover a{
+
+.menu1 li:hover a{
 	color: white;
 }
+.menu2{
+	border-left: 1px solid #60b5ed;
+	font-size: 0;
+}
+.menu2 li:hover a{
+	text-decoration: underline;
+}
+.menu2 img{
+margin-right: 10px;
+}
+
 
 .content {
+	height: 100%;
 	position: relative;
-	width: 100%;
-	height: -webkit-calc(100% - 36px);
-	clear: both;
-	display: block;
-	background: url('../img/background.jpg') no-repeat center center fixed;
-	background-size:cover;
-	
 }	
-
 .login{
-	position: relative;
+	position: absolute;
+	top:50%;
+	left:50%;
 	width: 600px;
 	height: 615px;
-	top:-webkit-calc(50% - 306px);
-	left:-webkit-calc(50% - 300px);
-	clear: both;
+	margin:-307px -300px;
+	
 }
-.login div{
-	background-color: rgba(0,0,0,.63);
-}
+
 .login_title{
 	position: relative;
 	text-align: center;
 	line-height: 40px;
 	font-size: 20px;
-	/*border: 1px solid red;*/
+	
 	height: 60px;
 	width: 100%;
 	margin-bottom: 2px;
+	background-color: rgba(0,0,0,.63);
+}
+.title_with_line{
+	text-align: center;
+}
+.title_with_line:before,
+.title_with_line:after{
+	content:'';
+	position: relative;
+	display: inline-block;
+	width: 123px;
+	height: 1px;
+	border-bottom: 1px solid black;
+	background: grey;
+	vertical-align: middle;
+}
+.title_with_line:before{
+	margin: 0 5px 0 0;
+}
+.title_with_line:after{
+	margin: 0 0 0 5px;
 }
 .login_content{
 	position: relative;
 	display: block;
 	height: -webkit-calc(100% - 64px);
+	height: calc(100% - 64px);
 	width: 100%;
 	text-align: center;
 	color: #ccc;
 	font-size: 14px;
 	clear: both;
+	background-color: rgba(0,0,0,.63);
 }
 .login_content div{
-	background-color: rgba(0,0,0,0);
-	padding-top:10px;
-}
-.splitter{
-	position: relative;
-	top:11px;
+	background-color: transparent;
+	padding-top:25px;
 }
 .login_content 
 input[type="text"], 
@@ -139,13 +164,19 @@ input[type="password"],
 input[type="email"]{
 	color:white;
 	font-size: 14px;
-	font-family: "Helvetica Heue";
+	font-family: "Helvetica Heue",sans-serif;
+	text-align: center;
 	height: 35px;
 	width: 275px;
-	padding-left: 0px;
+	/*margin-left: px;*/
 	background-color: #000;
-	border:none;
-	padding: 10px;
+	box-sizing:border-content;
+	/*border:none;*/
+	/*padding: 0px;*/
+	/*margin: 8px 0;*/
+	/*padding: 16px 0 0 10px;*/
+    border-width: 0;
+    border-bottom: 1px solid #494949;
     transition: box-shadow 1s, border 1s;
 }
 
@@ -155,16 +186,15 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus{
 	background: #1b5288;
-	-webkit-box-shadow: inset 0px 0px 16px 2px rgba(45,127,204,1);
-	-moz-box-shadow: inset 0px 0px 16px 2px rgba(45,127,204,1);
-	box-shadow: inset 0px 0px 16px 2px rgba(45,127,204,1);
-	-webkit-box-shadow: 0px 0px 16px 2px rgba(45,127,204,1);
+	-webkit-box-shadow:  0px 0px 16px 2px rgba(45,127,204,1);
 	-moz-box-shadow: 0px 0px 16px 2px rgba(45,127,204,1);
 	box-shadow: 0px 0px 16px 2px rgba(45,127,204,1);
+	
 }
 .login_content button[type="submit"]{
 	color: white;
 	font-size: 14px;
+	font-family: tahoma, sans-serif;
 	border:none;
 	border-radius:4px; 
 	width: 150px;
