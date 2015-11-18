@@ -9,7 +9,7 @@
 <body>
 	<div class="wrapper">
 		<header>
-			<section class="contacts">
+			<div class="contacts">
 				<div class="phones">
 					<img src="img/phone.png" alt="" width="22" height="21"> (044)123-45-67 (044)567-89-10
 				</div>
@@ -19,8 +19,7 @@
 						<input type="text" name="login" placeholder="логин">
 						<input type="password" name="password" placeholder="пароль">
 						<a href="#">вход</a> | <a href="#">регистрация</a>
-						
-						<a class="forgot_pass" href="#">забыли пароль?</a>
+						<span class="forgot_pass"><a href="#">забыли пароль?</a></span>
 					</form>
 				</div>
 				<div class="map">
@@ -29,11 +28,11 @@
 					<a href=""><img src="img/mail_icon.png" alt="" width="12" height="9"></a>
 
 				</div>
-			</section>
-			<section class="banner">
+			</div>
+			<div class="banner">
 				<img src="img/banner.jpg" alt="">
-			</section>
-			<section class="menu">
+			</div>
+			<div class="menu">
 				<div class="koshik">
 					<img src="img/cart_icon.png" alt="">
 					товаров: <span class="num_items">0</span> &nbsp;&nbsp;&nbsp;
@@ -50,20 +49,20 @@
 						<li><a href="#">контакты</a></li>
 					</ul>
 				</nav>
-			</section>
+			</div>
 			
 		</header>
 		<div class="main">
 			
-			<section class=" left_col">
+			<div class=" left_col">
 				<div class="col_title">
 					<img src="img/catalog_icon.png" alt="" width="22" height="21">
-					<span style="vertical-align:5px;">КАТАЛОГ ПРОДУКЦИИ:</span>
+					<h3>КАТАЛОГ ПРОДУКЦИИ:</h3>
 				</div>
-				<nav class="sb">
+				<div class="sb">
 					<div class="select_title">
 						<img src="img/circ_icon.png" alt="" width="22" height="21">
-						<span style="vertical-align:5px;">ШИНЫ</span>
+						<h3>ШИНЫ</h3>
 					</div>
 					<ul>
 						<li><a href="#">Наименование 1</a></li>
@@ -71,11 +70,11 @@
 						<li><a href="#">Наименование 3</a></li>
 						<li><a href="#">Наименование 4</a></li>
 					</ul>
-				</nav>
-				<nav class="sb">
+				</div>
+				<div class="sb">
 					<div class="select_title">
 						<img src="img/circ_icon.png" alt="" width="22" height="21">
-						<span style="vertical-align:5px;">ДИСКИ</span>
+						<h3>ДИСКИ</h3>
 					</div>
 					<ul>
 						<li><a href="#">Наименование 1</a></li>
@@ -83,11 +82,11 @@
 						<li><a href="#">Наименование 3</a></li>
 						<li><a href="#">Наименование 4</a></li>
 					</ul>
-				</nav>
-				<nav class="sb">
+				</div>
+				<div class="sb">
 					<div class="select_title">
 						<img src="img/circ_icon.png" alt="" width="22" height="21">
-						<span style="vertical-align:5px;">БОЛТЫ</span>
+						<h3>БОЛТЫ</h3>
 					</div>
 					<ul>
 						<li><a href="#">Наименование 1</a></li>
@@ -95,20 +94,20 @@
 						<li><a href="#">Наименование 3</a></li>
 						<li><a href="#">Наименование 4</a></li>
 					</ul>
-				</nav>
-			</section>
+				</div>
+			</div>
 
-			<section class="right_col">
+			<div class="right_col">
 				<div class="col_title">
 					<img src="img/catalog_icon.png" alt="" width="22" height="21">
-					<span style="vertical-align:5px;">БРЕНДЫ:</span>
+					<h3>БРЕНДЫ:</h3>
 				</div>
 				<form action="#">
-				<nav class="chb">
+				<div class="check_bar">
 				
 					<div class="select_title">
 						<img src="img/circ_icon.png" alt="" width="22" height="21">
-						<span style="vertical-align:5px;">ШИНЫ</span>
+						<h3>ШИНЫ</h3>
 					</div>
 					<ul>
 						<li><input type="checkbox" id="ch1"><label for="ch1">Бренд 1</label></li>
@@ -120,11 +119,11 @@
 						</li>
 						
 					</ul>
-				</nav>
-				<nav class="chb">
+				</div>
+				<div class="check_bar">
 					<div class="select_title">
 						<img src="img/circ_icon.png" alt="" width="22" height="21">
-						<span style="vertical-align:5px;">ДИСКИ</span>
+						<h3>ДИСКИ</h3>
 					</div>
 					<ul>
 						<li><input type="checkbox" id="ch5"><label for="ch5">Бренд 1</label></li>
@@ -138,15 +137,15 @@
 					</ul>
 					
 					
-				</nav>
+				</div>
 				<button type="submit">Выбрать</button>
 				</form>
-			</section>
+			</div>
 						
-			<section class="mid_col">
-				
+			<div class="mid_col">
 				<div class="product_items">
 					<figure>
+					<a href="#">
 						<figcaption>
 							<h3>Goodyear</h3>
 							<span class="item_title">Ultra Grip Extreme</span>
@@ -154,29 +153,14 @@
 						<div class="item_image">
 							<img src="img/goodyear.png" alt="" width="79" height="119">
 						</div>
-						<figcaption>
-							<span class="item_price">115.00 грн</span>
-						</figcaption>
-					</figure>
-				</div>
-				
-				<div class="product_items">
-					<figure>
-						<figcaption>
-							<h3>Goodyear</h3>
-							<span class="item_title">Ultra Grip Extreme</span>
-						</figcaption>
-						<div class="item_image">
-							<img src="img/goodyear.png" alt="" width="79" height="119">
-						</div>
-						<figcaption>
-							<span class="item_price">115.00 грн</span>
-						</figcaption>
+						<span class="item_price">115.00 грн</span>
+					</a>
 					</figure>
 				</div>
 
 				<div class="product_items">
 					<figure>
+					<a href="#">
 						<figcaption>
 							<h3>Goodyear</h3>
 							<span class="item_title">Ultra Grip Extreme</span>
@@ -184,14 +168,42 @@
 						<div class="item_image">
 							<img src="img/goodyear.png" alt="" width="79" height="119">
 						</div>
+						<span class="item_price">115.00 грн</span>
+					</a>
+					</figure>
+				</div>
+				<div class="product_items">
+					<figure>
+					<a href="#">
 						<figcaption>
-							<span class="item_price">115.00 грн</span>
+							<h3>Goodyear</h3>
+							<span class="item_title">Ultra Grip Extreme</span>
 						</figcaption>
+						<div class="item_image">
+							<img src="img/goodyear.png" alt="" width="79" height="119">
+						</div>
+						<span class="item_price">115.00 грн</span>
+					</a>
+					</figure>
+				</div>
+				<div class="product_items">
+					<figure>
+					<a href="#">
+						<figcaption>
+							<h3>Goodyear</h3>
+							<span class="item_title">Ultra Grip Extreme</span>
+						</figcaption>
+						<div class="item_image">
+							<img src="img/goodyear.png" alt="" width="79" height="119">
+						</div>
+						<span class="item_price">115.00 грн</span>
+					</a>
 					</figure>
 				</div>
 
 				<div class="product_items">
 					<figure>
+					<a href="#">
 						<figcaption>
 							<h3>Goodyear</h3>
 							<span class="item_title">Ultra Grip Extreme</span>
@@ -199,14 +211,42 @@
 						<div class="item_image">
 							<img src="img/goodyear.png" alt="" width="79" height="119">
 						</div>
+						<span class="item_price">115.00 грн</span>
+					</a>
+					</figure>
+				</div>
+				<div class="product_items">
+					<figure>
+					<a href="#">
 						<figcaption>
-							<span class="item_price">115.00 грн</span>
+							<h3>Goodyear</h3>
+							<span class="item_title">Ultra Grip Extreme</span>
 						</figcaption>
+						<div class="item_image">
+							<img src="img/goodyear.png" alt="" width="79" height="119">
+						</div>
+						<span class="item_price">115.00 грн</span>
+					</a>
+					</figure>
+				</div>
+				<div class="product_items">
+					<figure>
+					<a href="#">
+						<figcaption>
+							<h3>Goodyear</h3>
+							<span class="item_title">Ultra Grip Extreme</span>
+						</figcaption>
+						<div class="item_image">
+							<img src="img/goodyear.png" alt="" width="79" height="119">
+						</div>
+						<span class="item_price">115.00 грн</span>
+					</a>
 					</figure>
 				</div>
 
 				<div class="product_items">
 					<figure>
+					<a href="#">
 						<figcaption>
 							<h3>Goodyear</h3>
 							<span class="item_title">Ultra Grip Extreme</span>
@@ -214,14 +254,13 @@
 						<div class="item_image">
 							<img src="img/goodyear.png" alt="" width="79" height="119">
 						</div>
-						<figcaption>
-							<span class="item_price">115.00 грн</span>
-						</figcaption>
+						<span class="item_price">115.00 грн</span>
+					</a>
 					</figure>
 				</div>
-
 				<div class="product_items">
 					<figure>
+					<a href="#">
 						<figcaption>
 							<h3>Goodyear</h3>
 							<span class="item_title">Ultra Grip Extreme</span>
@@ -229,61 +268,16 @@
 						<div class="item_image">
 							<img src="img/goodyear.png" alt="" width="79" height="119">
 						</div>
-						<figcaption>
-							<span class="item_price">115.00 грн</span>
-						</figcaption>
+						<span class="item_price">115.00 грн</span>
+					</a>
 					</figure>
 				</div>
+			</div>
 
-				<div class="product_items">
-					<figure>
-						<figcaption>
-							<h3>Goodyear</h3>
-							<span class="item_title">Ultra Grip Extreme</span>
-						</figcaption>
-						<div class="item_image">
-							<img src="img/goodyear.png" alt="" width="79" height="119">
-						</div>
-						<figcaption>
-							<span class="item_price">115.00 грн</span>
-						</figcaption>
-					</figure>
-				</div>
-
-				<div class="product_items">
-					<figure>
-						<figcaption>
-							<h3>Goodyear</h3>
-							<span class="item_title">Ultra Grip Extreme</span>
-						</figcaption>
-						<div class="item_image">
-							<img src="img/goodyear.png" alt="" width="79" height="119">
-						</div>
-						<figcaption>
-							<span class="item_price">115.00 грн</span>
-						</figcaption>
-					</figure>
-				</div>
-
-				<div class="product_items">
-					<figure>
-						<figcaption>
-							<h3>Goodyear</h3>
-							<span class="item_title">Ultra Grip Extreme</span>
-						</figcaption>
-						<div class="item_image">
-							<img src="img/goodyear.png" alt="" width="79" height="119">
-						</div>
-						<figcaption>
-							<span class="item_price">115.00 грн</span>
-						</figcaption>
-					</figure>
-				</div>
-			</section>
 			
 		</div>
 		<footer>
-			<section class="logotypes">
+			<div class="logotypes">
 				<div><img src="img/01.png" alt=""></div>
 				<div><img src="img/02.png" alt=""></div>
 				<div><img src="img/03.png" alt=""></div>
@@ -292,8 +286,8 @@
 				<div><img src="img/06.png" alt=""></div>
 				<div><img src="img/07.png" alt=""></div>
 				<div><img src="img/08.png" alt=""></div>
-			</section>
-			<section class="footer_info">
+			</div>
+			<div class="footer_info">
 				<a href="#">О компании</a>
 				&nbsp;&nbsp;|&nbsp;&nbsp;
 				<a href="#">Доставка</a>
@@ -305,7 +299,7 @@
 					Создание сайта © Global Vision
 				</div>
 				
-			</section>
+			</div>
 		</footer>
 	</div>
 

@@ -1,5 +1,4 @@
 html,body{
-	width: 100%;
 	height: 100%;
 	font-family: Arial, sans-serif;
 }
@@ -15,11 +14,9 @@ html,body{
 	margin: 10px auto 0 auto;
 }
 header{
-	width: 100%;
 	height: 314px;
 }
 .contacts{
-	width: 100%;
 	height: 31px;
 	position: relative;
 }
@@ -77,30 +74,35 @@ header{
 	color: #fff;
 	text-decoration: none;
 	padding-left: 1px;
+	letter-spacing: .3px;
 }
-.forgot_pass {
+.auth .forgot_pass a{
 	color: #bfbfbf;
-	font-size: 12px;
+	font-size: 11px;
+	text-decoration: underline;
 	margin-left: 14px;
 }
 .map{
-	border: 1px solid #000;
+	border: 1px solid #c1c8cb;
+	-webkit-box-shadow: 3px 3px 4px 0px rgba(185,185,185,1);
+	-moz-box-shadow: 4px 4px 4px 0px rgba(185,185,185,1);
+	box-shadow: 2px 2px 3px 0px rgba(185,185,185,1);
+	padding-bottom: 0px;
+
 	border-radius: 12px;
 	float: right;
 	width: 76px;
 	height: 21px;
-	background:rgba(255,255,);
 	margin-right:8px;
 }
 .map img{
 	margin: 3px;
 	position: relative;
 	left:6px;
-	top:0px;
+	top:2px;
 }
 .menu{
 	position: relative;
-	width: 100%;
 	height: 33px;
 	color:#b1bcc0;
 	background: url('../img/menu_bkg.png');
@@ -131,7 +133,7 @@ header{
 	top: 4px;
 	margin: 0 3px;
 }
-.menu li:hover{
+.menu li:hover, {
 	background: #25617b; /* Old browsers */
 	background: -moz-linear-gradient(top,  #25617b 0%, #09233b 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25617b), color-stop(100%,#09233b)); /* Chrome,Safari4+ */
@@ -140,6 +142,9 @@ header{
 	background: -ms-linear-gradient(top,  #25617b 0%,#09233b 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #25617b 0%,#09233b 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25617b', endColorstr='#09233b',GradientType=0 ); /* IE6-9 */	
+}
+.menu a:hover{
+	color: white;
 }
 .koshik {
 	float: right;
@@ -167,27 +172,52 @@ header{
 	margin-top: 16px;
 }
 .col_title{
+	overflow: hidden;
+	display: block;
 	border: 1px solid #79878d;
 	border-radius: 15px;
+	/*box-sizing:border-box;*/
 	-webkit-box-shadow: 3px 3px 3px 0px rgba(150,150,150,0.75);
 	-moz-box-shadow: 3px 3px 3px 0px rgba(150,150,150,0.75);
 	box-shadow: 3px 3px 3px 0px rgba(150,150,150,0.75);
 	font-size: 12px;
 	padding: 1px;
 	margin-bottom: 13px;
-	margin-top: 2px;
+	margin-top: 1px;
+	
+}
+.col_title img, .col_title h3{
+	display: inline-block;
+	float: left;
+
+}
+.col_title h3{
+font-weight: bold;
+margin:6px 0 0 5px;
+letter-spacing: .3px;
+
 }
 .select_title{
 	border: 1px solid #79878d;
 	border-radius: 15px;
+	overflow: hidden;
+	box-sizing: border-box;
 	-webkit-box-shadow: 3px 3px 3px 0px rgba(150,150,150,0.75);
 	-moz-box-shadow: 3px 3px 3px 0px rgba(150,150,150,0.75);
 	box-shadow: 3px 3px 3px 0px rgba(150,150,150,0.75);
 	font-size: 14px;
 	padding: 3px 4px;
 	width: 151px;
-	box-sizing: border-box;
 	height: 30px;
+}
+.select_title img, .select_title h3{
+	display: inline-block;
+	float: left;
+}
+.select_title h3{
+font-weight: bold;
+margin:5px 0 0px 5px;
+letter-spacing: .3px;
 
 }
 .left_col{
@@ -207,7 +237,7 @@ header{
 	letter-spacing: 0;
 }
 .left_col li{
-	font-family: "lucida sans unicode regular";
+	font-family: "lucida sans unicode regular",sans-serif;
 	font-size: 13px;
 }
 .left_col li:hover{
@@ -221,18 +251,23 @@ header{
 	float: right;
 	color: #114165;
 }
-.right_col .chb{
+.right_col .check_bar{
 	padding-left: 12px;
 }
 .right_col ul{
-	width: 100%;
 	font-size: 13px;
 	display: block;
-	margin: 3px 0px 0px 9px;
+	margin: 10px 0px 0px 9px;
 }
 .right_col li{
-	height: 27px;
+	height: 24px;
 }
+input[type="checkbox"]{
+	margin:0 7px 0 0;
+	padding: 0;
+	transform: scale(.7);
+}
+
 .right_col button{
 	border:none;
 	box-sizing:content-box;
@@ -279,15 +314,15 @@ header{
 	margin: 10px 14px;
 }
 .item_image{
+	box-sizing:border-box;
 	width: 138px;
 	border-radius: 8px;
 	background:white;
 	border: 1px solid rgba(0,0,0,0.3);
-	margin-bottom: 0px;
-	padding: 0px 0;
+	margin: 3px auto;
+	padding: 2px 0;
 	height: 127px;
 }
-
 .product_items h3{
 	font-size: 15px;
 	color:#206988;
@@ -303,7 +338,6 @@ header{
 	color:#114165;
 }
 footer{
-	width: 100%;
 	height: 150px;
 	margin-top: 40px;
 	text-align: center;
@@ -312,6 +346,7 @@ footer{
 footer .logotypes div{
 	display: inline-block;
 	margin:6px 6px 26px 6px;
+	vertical-align: top;
 }
 footer .footer_info{
 	color:#bec6c9;
