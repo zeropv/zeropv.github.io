@@ -18,7 +18,6 @@ body{
 	height: 100%;
 	background: url('../img/background.jpg') no-repeat center center ;
 	background-size:cover;
-	
 }
 .clearfix:after{
 	content:'';
@@ -35,11 +34,8 @@ body{
 	color:#fff;
 	overflow: hidden;
 	position: relative;
-	/*height:36px;*/
-	/*width: 100%;*/
 	background: url('../img/bg1.png') 0 0 repeat;
 	z-index: 1;
-
 }
 .header ul{
 	float: right;
@@ -50,7 +46,6 @@ body{
 .header ul li{
 	display: inline-block;
 	padding: 0 10px;
-	/*border:1px solid rgba(69,154,212,0);*/
 	border:1px solid transparent;
 }
 .header img{
@@ -64,7 +59,6 @@ body{
 	color: #fff;
 	text-decoration: none;
 	padding:0 10px;
-		
 }
 .header .menu1  a{
 	color:#60b5ed;
@@ -95,8 +89,6 @@ body{
 .menu2 img{
 margin-right: 10px;
 }
-
-
 .content {
 	height: 100%;
 	position: relative;
@@ -168,13 +160,8 @@ input[type="email"]{
 	text-align: center;
 	height: 35px;
 	width: 275px;
-	/*margin-left: px;*/
 	background-color: #000;
 	box-sizing:border-content;
-	/*border:none;*/
-	/*padding: 0px;*/
-	/*margin: 8px 0;*/
-	/*padding: 16px 0 0 10px;*/
     border-width: 0;
     border-bottom: 1px solid #494949;
     transition: box-shadow 1s, border 1s;
@@ -189,7 +176,6 @@ input[type="email"]:focus{
 	-webkit-box-shadow:  0px 0px 16px 2px rgba(45,127,204,1);
 	-moz-box-shadow: 0px 0px 16px 2px rgba(45,127,204,1);
 	box-shadow: 0px 0px 16px 2px rgba(45,127,204,1);
-	
 }
 .login_content button[type="submit"]{
 	color: white;
@@ -213,7 +199,6 @@ input[type="email"]:focus{
 .login_content button[type="submit"]:active{
 	box-shadow: 0px 0px 2px 2px rgba(45,127,204,1);
 }
-
 .login_content .privacy{
 	font-size: 12px;
 	margin:20px auto;
