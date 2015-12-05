@@ -12,7 +12,7 @@ var userName;
 userName = prompt("Log in:");
 i=0;
 while ((i<n) && (!isRegistered)){
-	debugger;
+	// debugger;
 	isRegistered = (names[i] == userName);
 	i++; 
 

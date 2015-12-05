@@ -1,4 +1,5 @@
 
+
 function IsNumeric(input)
 {
     return (input - 0) == input && (''+input).trim().length > 0;
@@ -6,12 +7,12 @@ function IsNumeric(input)
 function pow (a,b) {
 var result=1;
 	for (var i = 1; i <= b; i++){
-		debugger;
+		// debugger;
 		result *= a;
 	}
 	console.log ('The result of num POW exp is:', result);
 }
-alert ('1 homework part...');
+alert ('first part of homework...');
 var num, exp;
 console.log(IsNumeric(12));
 do{
