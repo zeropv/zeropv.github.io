@@ -1,0 +1,30 @@
+* {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 14px;
+}
+body{
+	width: 800px;
+	border: 1px solid #000;
+}
+li {
+	list-style: none;
+}
+ul{
+	margin:10px 0 10px 0; 
+}
+.btnSubmit{
+	background: #cfe2f3;
+	width: 327px;
+	height: 50px;
+	text-align: center;
+	border: 1px solid #000;
+}
+.submitBox{
+	text-align: center;
+}
+.check{
+	box-shadow: inset 0 0 0 2px black;
+}
+.titleBox{
+	text-align: center;
+}
