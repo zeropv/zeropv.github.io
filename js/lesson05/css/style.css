@@ -1,0 +1,17 @@
+.wrapper{
+	text-align: center;
+	margin: 0 auto;
+}
+.timer{
+	border: 1px solid #000;
+}
+.time{
+	display: inline-block;
+}
+.control-box{
+	/*display: inline-block;*/
+
+}
+.btn-box{
+	display: inline-block;
+}
