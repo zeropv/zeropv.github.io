@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="Stylesheet" type="text/css" href="css/wSelect.css" />
+	<link rel="Stylesheet" type="text/css" href="css/wCheck.css" />
+
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	
+	<script type="text/javascript" src="js/jcarousel/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="js/wSelect.js"></script>
+	<script type="text/javascript" src="js/wCheck.js"></script>
+ 	<script type="text/javascript" src="js/main.js"></script>
+
+	
+</head>
+<body>
+
+<nav>
+    <ul class="content clearfix">
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li class="dropdown">
+            <a href="#">Nav 3</a>
+            <ul class="sub-menu">
+                <li><a href="#">Nav 3.1</a></li>
+                <li><a href="#">Nav 3.2</a></li>
+                <li><a href="#">Nav 3.3</a></li>
+                <li class="dropdown">
+                    <a href="#">Nav 3.4</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Nav 3.4.1</a></li>
+                        <li class="dropdown">
+                            <a href="#">Nav 3.4.2</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Nav 3.4.2.1</a></li>
+                                <li><a href="#">Nav 3.4.2.2</a></li>
+                                <li><a href="#">Nav 3.4.2.3</a></li>
+                                <li><a href="#">Nav 3.4.2.4</a></li>
+                                <li><a href="#">Nav 3.4.2.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 3.4.3</a></li>
+                        <li><a href="#">Nav 3.4.4</a></li>
+                        <li><a href="#">Nav 3.4.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav 3.5</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Nav 4</a></li>
+        <li><a href="#">Nav 5</a></li>
+    </ul>
+</nav>
+<div id="main">
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam;</p>
+    </div>
+</div>
+
+
+	<div class="jcarousel-wrapper">
+		<div class="jcarousel1">
+		    <ul >
+		    	<li><a class="fancybox" href="img/img1.jpg"><img src="img/img1_thumb.jpg"   alt=""></a></li>
+		    	<li><a class="fancybox" href="img/img2.jpg"><img src="img/img2_thumb.jpg"  alt=""></a></li>
+		    	<li><a class="fancybox" href="img/img3.jpg"><img src="img/img3_thumb.jpg"  alt=""></a></li>
+		    	<li><a class="fancybox" href="img/img4.jpg"><img src="img/img4_thumb.jpg"  alt=""></a></li>
+		    	<li><a class="fancybox" href="img/img5.jpg"><img src="img/img5_thumb.jpg"  alt=""></a></li>
+		    	<li><a class="fancybox" href="img/img6.jpg"><img src="img/img6_thumb.jpg"  alt=""></a></li>
+		    </ul>
+		</div>
+		<!-- Controls -->
+	    <a class="jcarousel-prev" href="#">Prev</a>
+	    
+	    <a class="jcarousel-next" href="#">Next</a>
+	    <span class="jcarousel-end">End</span>
+
+
+	</div>
+	<div class="jcarousel-pagination">
+        <!-- Pagination items will be generated in here -->
+        </div>
+
+        
+    <div class="content-box">
+      <label class="wLabel-left">Country:</label>
+      <select id="demo" tabindex="1">
+        <option value="">Select a Country</option>
+        <option value="AU" data-icon="img/wselect/AU.png">Australia</option>
+        <option value="CA" data-icon="img/wselect/CA.png" disabled="disabled">Canada</option>
+        <option value="PL" data-icon="img/wselect/PL.png">Poland</option>
+        <option value="TH" data-icon="img/wselect/TH.png">Thailand</option>
+        <option value="UK" data-icon="img/wselect/UK.png">England (United Kingdom)</option>
+      </select>
+  
+      <br/>
+
+      <label class="wLabel-left-top">Sports:</label>
+      <select id="demo-multi" tabindex="2" multiple="multiple">
+        <option value="soccer" data-icon="img/wselect/soccer.png">Soccer</option>
+        <option value="archery" data-icon="img/wselect/archery.png">Archery</option>
+        <option value="basketball" data-icon="img/wselect/basketball.png">Basketball</option>
+        <option value="baseball" data-icon="img/wselect/baseball.png">Baseball</option>
+        <option value="curling" data-icon="img/wselect/curling.png">Curling</option>
+        <option value="veolleyball" data-icon="img/wselect/volleyball.png">Volleyball</option>
+      </select>
+
+      
+    
+    
+    <div class="content-box">
+      <label class="wLabel-left"></label>
+
+      <input type="checkbox" tabindex="51" class="checkbox-test9" data-label="one" checked="checked" />
+      
+      <br/>
+
+      <label class="wLabel-left"></label>
+      
+      <input type="checkbox" tabindex="56" class="checkbox-test10" data-label="two" checked="checked" />
+      
+      <br/>
+      <label class="wLabel-left"></label>
+      
+      <input type="checkbox" tabindex="61" class="checkbox-test11" data-label="three" checked="checked" />
+      
+      <br/>
+      <label class="wLabel-left"></label>
+      
+      <input type="checkbox" tabindex="66" class="checkbox-test12" data-label="four" checked="checked" />
+	</div>
+
+	<!-- css custom checkbox -->
+	<div class="content-box">
+		
+	<p>
+    	<input type="checkbox" id="test1" />
+    	<label for="test1">Red</label>
+  	</p>
+  	<p>
+	    <input type="checkbox" id="test2" checked="checked" />
+	    <label for="test2">Yellow</label>
+  	</p>
+  	<p>
+    	<input type="checkbox" id="test3" checked="checked" disabled="disabled" />
+    	<label for="test3">Green</label>
+  	</p>
+    <p>
+    	<input type="checkbox" id="test4" disabled="disabled" />
+      	<label for="test4">Brown</label>
+  </p>			
+				
+				
+			
+	</div>
+      
+    </div>
+</body>
+</html>
