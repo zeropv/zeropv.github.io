@@ -36,17 +36,16 @@ var timer = {
 		
 		timer.timerCount.innerHTML = timer.getTimerString();
 	},
-
 	startTimer: function(){
 		var self = this;
-	
+		// debugger
 		timer.timerId = setInterval(timer.run,10);
+		this.disabled = true;
 	},
-	
 	stopTimer: function(){
+		timer.startBtnElem.disabled = false;
 		clearInterval(timer.timerId);
 	},
-
 	clearTimer: function(){
 		with (timer){
 			hours=0;
