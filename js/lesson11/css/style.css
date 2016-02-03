@@ -1,0 +1,34 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.carousel-list {
+	list-style: none;
+	width: 20000em;
+	position: relative;
+}
+.carousel-item {
+	display: block;
+	float:left;
+	margin-right:25px;
+	background: rgba(0,0,0,0.3);
+	
+}
+img {
+	max-width: 640px;
+}
+.carousel-hider {
+	width:640px;
+	overflow: hidden;
+	float:left;
+}
+.carousel-arrow-right, 
+.carousel-arrow-left {
+	float: left;
+	display: block;
+	border: 1px solid #000;
+	background: lightgrey;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 200px;
+}
