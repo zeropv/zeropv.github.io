@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+h1 {
+	text-align: center;
+	margin:25px auto;
+}
+.wrapper{
+	/*text-align: center;*/
+	width: 800px;
+	margin: 0 auto;
+	border: 1px solid #000;
+}
+.search-box{
+
+	margin: 5px;
+	padding: 5px;
+	border: solid 1px lightgrey; 
+}
+.input-box{
+	overflow: hidden;	
+	padding-right: 10px;
+}
+#search-input{
+	font-size: 14px;
+	display: inline-block;
+	/*float: left;*/
+	width: 100%;
+}
+
+#search-btn{
+	display: inline-block;
+	float: right;
+}
+.results-box{
+	/*height: 400px;*/
+	border: 1px solid lightgrey;
+	margin: 5px;
+	padding: 5px;
+}

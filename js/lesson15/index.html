@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src=js/tmpl.js></script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<h1>Google search API</h1>
+	<div class="wrapper">
+		<div class="search-box">
+			<form action="#" class="searcher">
+				<input type="submit" id="search-btn" value="Search">
+				<div class="input-box">
+					<input type="text" id="search-input">
+				</div>
+		</div>
+		<div class="results-box">
+			
+			<script type="text/template" id="results">
+				<div class="search-result">
+					<h3>
+						<a href="<%= url %>" title="<%= url %>" target="_blank"> <%= title %> </a>
+					</h3>
+					<p class="visibleURL"><%= visibleUrl %></p>
+					<p class="content">	<%= content %> </p>
+				</div>
+			</script>	
+
+		</div>
+		</form>
+	</div>
+</body>
+</html>
