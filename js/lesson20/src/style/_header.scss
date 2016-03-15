@@ -1,0 +1,110 @@
+header{
+	font-family: $ubuntu-l;
+}
+.header-wrapper{
+	margin: 0 auto;
+	width: $wrapper-width;
+}
+.header-line{
+	overflow: hidden;
+	padding-top: 20px;
+}
+.logo-box{
+	.logo{
+		background:transparent url('../img/logo.png') left top no-repeat;
+		float: left;
+  		padding-left: 52px;
+  		&:visited{
+  			color:#434343;
+  		};
+	}
+	h1{
+		font-family: $ubuntu-m;
+		font-size: 30px;
+		
+	}
+	p{
+		font-family: ubuntu-l;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: rgba(143,143,143,0.65);
+		letter-spacing: 3px;
+	}
+
+	float:left;
+}
+.socials-menu{
+	float: right;
+}
+.socials-menu__item{
+	display: inline-block;
+	line-height: 37px;
+	color: #ccc;
+	width: 33px;
+  	&:hover {
+	    cursor: pointer;
+	    color: #248cec;
+  	}
+}
+.header-menu{
+	margin: 37px 0 40px 0;
+	height: $header-menu-height;
+	background: #2a2d32;
+	li{
+		border-right: solid 1px;
+		display: inline-block;
+		height: $header-menu-height;
+		width: 112px;
+		text-align: center;
+		line-height: $header-menu-height;
+		&.active{
+			background: #248cec;
+		}
+		&:hover{
+			/*background: #248cec;*/
+		};
+		&.search{
+			float: right;
+			/*border: 1px solid #fff;*/
+			width: 238px;
+			.search-box{
+				/*border: 1px solid #fff;*/
+				margin: 8px 12px;
+				height: 40px;
+				line-height: 40px;
+				padding: 0 12px;
+				text-align: left;
+				color:#585a5e;
+				background: #35383c;
+				input{
+					background: #35383c;
+					border:none;
+					color:#fff;
+					width: 85%;
+					&:focus{
+						outline:none;
+					};
+				}
+				a{
+					&:visited{
+						color:#585a5e;
+					};
+				}	
+
+			}
+			
+		}
+		
+	}
+	.menu-item__link{
+		display: block;
+		font-family: $ubuntu-c;
+		font-size: 14px;
+		color: #fff;
+		line-height: 55px;
+		&:hover{
+			color: yellow;
+		};
+	}
+
+}

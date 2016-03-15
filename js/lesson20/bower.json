@@ -1,0 +1,24 @@
+{
+  "name": "lesson20",
+  "homepage": "https://github.com/zeropv/zeropv.github.io",
+  "authors": [
+    "zeropv <paul.nalivanniy@gmail.com>"
+  ],
+  "description": "",
+  "main": "main.js",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  },
+  "devDependencies": {
+    
+  }
+}

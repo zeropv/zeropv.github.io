@@ -1,0 +1,71 @@
+.footer-menu{
+
+	background: #2a2d32;
+}
+.footer-line{
+	background: #35383c;
+}
+.footer-menu-wrapper{
+	margin: 0 auto;
+	width: $wrapper-width;
+	font-size: 0;
+
+}
+.footer-menu-box{
+	font:13px $arial;
+	color: #fff; 
+	display: inline-block;
+	width: 25%;
+	padding-bottom: 80px;
+
+	/*height: 180px;*/
+	/*border: 1px solid red;*/
+	h1{
+		/*text-align: center;*/
+		margin: 62px 0 42px 0;
+		color:inherit;
+		font:16px $ubuntu-m;
+	}
+	ul{
+		padding-right: 40px;
+	}
+	li{
+		border-bottom: 1px solid #393c40;
+		&:last-child{
+			border:none;
+		}
+	}
+	
+
+	}
+.footer-menu-link{
+		line-height: 2em;
+		color: inherit;
+		opacity: 0.3;
+		&:hover{
+			opacity:1;
+			color:$blue;
+		};
+}
+.footer-line-box{
+	/*border: 1px solid green;*/
+	margin: 0 auto;
+	padding: 26px 0;
+	height: 60px;
+	width: $wrapper-width;
+	& div{
+		font: 12px $arial;
+		color: #fff;
+		/*opacity: 0.2;*/
+		float: left;
+		margin-right: 36px;
+		display: inline-block;
+		span{
+			padding-right: 10px;
+		}
+		&:last-child{
+			float:right;
+		};
+
+	}
+}
