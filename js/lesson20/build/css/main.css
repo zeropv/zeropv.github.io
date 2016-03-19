@@ -2150,7 +2150,6 @@ have a fixed width and height (but it's not required).
   /* Required only for block elements like <li>'s */
   float: left; }
 
-/*@import "_bootstrap";*/
 @font-face {
   font-family: 'ubuntu_condensed';
   src: url("../fonts/ubuntu-c-webfont.eot");

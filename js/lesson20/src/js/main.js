@@ -2,17 +2,19 @@
  * Third party
  */
 
-//= ../libs/jquery/dist/jquery.js
+ //= ../libs/jquery/dist/jquery.js
+ //= ../libs/lodash/lodash.js
+ //= ../js/jcarousel/jquery.jcarousel.js
+ //= ../js/jcarousel/jquery.jcarousel-autoscroll.js
+
 
 /*
-* //= ../libs/jcarousel/jquery.jcarousel.js
-*/
+ * my Scripts
+ */
+
+
+  
+  //= script2.js
+  //= script1.js
  
- //= ../libs/jcarousel/jquery.jcarousel-autoscroll.js
 
-
- 
-//= script1.js
-
-
-//= script2.js

@@ -56,7 +56,7 @@ gulp.task('build:script', function(){
 	console.log('doing script building...');
 	return gulp.src(path.src.script+'main.js')
 				.pipe(sourceMaps.init())
-				.pipe(rigger())
+				.pipe(rigger()) //.on('error',error))
 				// .pipe(uglify())
 				// .pipe(rename({suffix: '.min'}))
 				.pipe(sourceMaps.write('.'))
