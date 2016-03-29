@@ -1,0 +1,39 @@
+//size and dims;
+$desktop-wrapper-size: 930px;
+$tablet-wrapper-size:768px;
+$mobile-wrapper-size:320px;
+
+//colors
+
+$rose-color: #ff4e50;
+
+
+//fonts
+
+$montserrat-b: 'montserratbold', sans-serif;
+$montserrat-r: 'montserratregular', sans-serif;
+$roboto-l:'robotolight', sans-serif;
+
+//mixins
+.btn {
+    font-family: $montserrat-b;
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 34px;
+    height: 34px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+//comon styles
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    /*color: #fff;*/
+}
+.wrapper{
+	margin: 0 auto;
+	border: 1px solid #000;
+	text-align: center;
+}

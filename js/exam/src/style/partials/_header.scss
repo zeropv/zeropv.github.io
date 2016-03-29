@@ -1,0 +1,57 @@
+.wrapper{
+	margin: 0 auto;
+}
+.header{
+	height: 700px;
+	background: url('../img/header.png') #1a1915 center center no-repeat;
+	background-size: cover;
+	.header-top{
+		margin: 0 auto;
+		position: relative;
+		/*overflow: hidden;*/
+		/*border: 1px solid #000;*/
+	}
+	h3{
+		float: left;
+		color: #fff;
+		font-family: $montserrat-b;
+		font-size: 20px;
+		line-height: 38px;
+	}
+	&__login-box{
+		display: inline-block;
+		float: right;
+		position: relative;
+		.btn-in.selected, .btn-in:hover {
+			@extend .btn;
+			border-color: #fff;
+		}
+	}
+	&__content{
+		position: relative;
+		top:225px;
+		margin: 0 auto;
+		text-align: center;
+		color:white;
+		h1{
+			text-align: center;
+			font-size: 52px;
+			font-family: $montserrat-b;
+			text-transform: uppercase;
+			margin: 0 auto;
+		}
+		p{
+			font-family: $roboto-l;
+			font-size: 24px;
+		}
+		.btn-header {
+    		@extend .btn;
+    		border-color: $rose-color;
+    		background-color: $rose-color;
+    	}
+	}
+}
+
+
+
+

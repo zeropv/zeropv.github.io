@@ -1,0 +1,293 @@
+/* Third party */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Custom */
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/montserrat-bold-webfont.eot");
+  src: url("../fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../fonts/montserrat-regular-webfont.eot");
+  src: url("../fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.btn, .header__login-box .btn-in.selected, .header__login-box .btn-in:hover, .header__content .btn-header, .content__partner .btn-partner, .content__discover .btn-search {
+  font-family: "montserratbold", sans-serif;
+  font-size: 14px;
+  padding: 0 10px;
+  line-height: 34px;
+  height: 34px;
+  border: 2px solid transparent;
+  border-radius: 20px; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  /*color: #fff;*/ }
+
+.wrapper {
+  margin: 0 auto;
+  border: 1px solid #000;
+  text-align: center; }
+
+.wrapper {
+  margin: 0 auto; }
+
+.header {
+  height: 700px;
+  background: url("../img/header.png") #1a1915 center center no-repeat;
+  background-size: cover; }
+  .header .header-top {
+    margin: 0 auto;
+    position: relative;
+    /*overflow: hidden;*/
+    /*border: 1px solid #000;*/ }
+  .header h3 {
+    float: left;
+    color: #fff;
+    font-family: "montserratbold", sans-serif;
+    font-size: 20px;
+    line-height: 38px; }
+  .header__login-box {
+    display: inline-block;
+    float: right;
+    position: relative; }
+    .header__login-box .btn-in.selected, .header__login-box .btn-in:hover {
+      border-color: #fff; }
+  .header__content {
+    position: relative;
+    top: 225px;
+    margin: 0 auto;
+    text-align: center;
+    color: white; }
+    .header__content h1 {
+      text-align: center;
+      font-size: 52px;
+      font-family: "montserratbold", sans-serif;
+      text-transform: uppercase;
+      margin: 0 auto; }
+    .header__content p {
+      font-family: "robotolight", sans-serif;
+      font-size: 24px; }
+    .header__content .btn-header {
+      border-color: #ff4e50;
+      background-color: #ff4e50; }
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 320px; }
+  .header__content h1 {
+    margin: 0 auto;
+    font-size: 30px;
+    width: 100%; }
+  .header h3 {
+    text-align: center;
+    position: relative;
+    top: 160px;
+    float: none; }
+  .header__login-box {
+    display: block;
+    text-align: center;
+    float: none;
+    padding-top: 20px; }
+  .content .jcarousel {
+    width: 295px;
+    height: 240px; }
+  .partner-list {
+    width: 292px; }
+  .search-box .btn-search {
+    width: 250px; }
+  .footer__links li {
+    display: inline-block; } }
+
+@media screen and (min-width: 769px) and (max-width: 930px) {
+  .wrapper {
+    width: 768px; }
+  .content .jcarousel {
+    width: 236px;
+    height: 400px; }
+  .partner-list {
+    width: 492px; }
+  .search-box .btn-search {
+    width: 158px; }
+  .footer .wrapper {
+    padding-top: 30px;
+    overflow: hidden; }
+  .footer__item {
+    float: left; }
+    .footer__item-logo {
+      float: right; }
+  .footer__links li {
+    display: block; } }
+
+@media screen and (min-width: 931px) {
+  .wrapper {
+    width: 930px; }
+  .header__content h1 {
+    width: 60%; }
+  .content .jcarousel {
+    width: 300px;
+    height: 400px; }
+  .search-box .btn-search {
+    width: 158px; }
+  .footer .wrapper {
+    padding-top: 30px;
+    overflow: hidden; }
+  .footer__item {
+    float: left; }
+    .footer__item-logo {
+      float: right; }
+  .footer__links li {
+    display: block; } }
+
+.content {
+  color: #000; }
+  .content header {
+    text-align: center;
+    font-size: 22px;
+    font-family: "montserratbold", sans-serif;
+    margin: 40px 0; }
+  .content__how {
+    background-color: #FAC6C6;
+    /*height: 200px;*/ }
+    .content__how .jcarousel {
+      display: inline-block;
+      border: 1px solid #000;
+      border-radius: 4px;
+      margin: 0 auto; }
+  .content__partner {
+    /*background-color: #9FE5F6;*/ }
+    .content__partner .partner-list {
+      border: 1px solid red;
+      margin: 0 auto;
+      text-align: center; }
+      .content__partner .partner-list li {
+        display: inline-block;
+        border: 1px solid #000;
+        width: 200px;
+        height: 200px; }
+    .content__partner .btn-partner {
+      display: inline-block;
+      margin: 0 auto;
+      font-size: 14px;
+      color: #ff4e50;
+      border-color: #ff4e50;
+      background-color: #fff; }
+  .content__discover {
+    /*background-color: #9DF6B6;*/
+    /*height: 200px;*/ }
+    .content__discover h3 {
+      font-family: "robotolight", sans-serif;
+      font-size: 18px;
+      margin: 10px auto; }
+    .content__discover .search-box {
+      margin: 15px 15px; }
+      .content__discover .search-box input {
+        line-height: 38px;
+        font-family: "robotolight", sans-serif;
+        font-size: 14px;
+        width: 280px;
+        margin: 10px 0;
+        border-radius: 4px;
+        padding: 0 14px;
+        border: 1px solid #ccc;
+        box-shadow: 0 1px #eee; }
+    .content__discover .btn-search {
+      /*display: block;*/
+      margin: 0 auto;
+      font-size: 14px;
+      border-color: #ff4e50;
+      background-color: #ff4e50; }
+
+.footer__split-line {
+  width: 100%;
+  height: 10px;
+  background-color: #ff4e50; }
+
+.footer h1 {
+  font: 16px "montserratbold", sans-serif;
+  color: #ff4e50;
+  margin: 0px auto;
+  text-transform: uppercase; }
+
+.footer h3 {
+  font: 14px "montserratbold", sans-serif;
+  color: #000;
+  margin: 0px auto; }
+
+.footer h6 {
+  color: #ccc;
+  font: 10px "montserratbold", sans-serif;
+  text-transform: uppercase; }
+
+.footer__item, .footer__item-logo {
+  margin: 0 40px 40px 40px; }
+
+.footer__links {
+  font-family: "robotolight", sans-serif;
+  padding: 0 26px;
+  margin: 17px auto; }
+  .footer__links__item {
+    color: #808080; }
+    .footer__links__item:hover {
+      color: #ff4e50; }
+
+.footer__partner-logo {
+  margin: 15px auto; }
+
+/*# sourceMappingURL=main.css.map */

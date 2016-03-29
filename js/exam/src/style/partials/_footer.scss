@@ -1,0 +1,43 @@
+.footer{
+	&__split-line{
+
+		width: 100%;
+		height: 10px;
+		background-color: $rose-color;
+	}
+	h1{
+		font: 16px $montserrat-b;
+		color:$rose-color;
+		margin: 0px auto;
+		text-transform: uppercase;
+
+	}
+	h3{
+		font: 14px $montserrat-b;
+		color: #000;
+		margin: 0px auto;
+	}
+	h6{
+		color:#ccc;
+		font: 10px $montserrat-b;
+		text-transform: uppercase;
+	}
+	&__item, &__item-logo{
+		margin: 0 40px 40px 40px;
+	}
+	&__links{
+		font-family: $roboto-l;
+		padding: 0 26px;
+		margin: 17px auto;
+		&__item{
+			color:#808080;
+
+			&:hover{
+				color:$rose-color;
+			};
+		}
+	}
+	&__partner-logo{
+		margin: 15px auto;
+	}
+}

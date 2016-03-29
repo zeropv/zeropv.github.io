@@ -1,0 +1,85 @@
+.content{
+	
+	color:#000;
+	header{
+			text-align: center;
+			font-size: 22px;
+			font-family: $montserrat-b;
+			margin:40px 0; 
+		}
+	&__how{
+		background-color: #FAC6C6;
+		/*height: 200px;*/
+		
+		
+		.jcarousel{
+			display: inline-block;
+			border: 1px solid #000;
+			border-radius: 4px;
+			margin: 0 auto;
+		}
+	}
+	&__partner{
+		/*background-color: #9FE5F6;*/
+		.partner-list{
+			border: 1px solid red;
+			margin: 0 auto;
+			text-align: center;
+			li{
+				display: inline-block;
+				border: 1px solid #000;
+				width:200px;
+				height: 200px;
+			}
+		}
+		.btn-partner {
+    		@extend .btn;
+    		display: inline-block;
+    		margin: 0 auto;
+    		font-size: 14px;
+    		color:$rose-color;
+    		border-color: $rose-color;
+    		background-color: #fff;
+
+    	}
+	}
+	&__discover{
+		/*background-color: #9DF6B6;*/
+		/*height: 200px;*/
+		
+		h3 {
+			font-family: $roboto-l;
+			font-size: 18px;
+			margin:10px auto;
+			
+
+
+		}
+		.search-box{
+			margin:15px 15px;
+			input {
+				line-height: 38px;
+				font-family: $roboto-l;
+				font-size: 14px;
+				width: 280px;
+				margin:10px 0;
+				border-radius: 4px;
+				padding: 0 14px;
+				border:1px solid #ccc;
+				box-shadow: 0 1px #eee;
+
+				
+			}
+		}
+		.btn-search {
+    		@extend .btn;
+    		/*display: block;*/
+    		margin: 0 auto;
+    		font-size: 14px;
+    		border-color: $rose-color;
+    		background-color: $rose-color;
+
+
+    	}
+	}
+}

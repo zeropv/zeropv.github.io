@@ -1,0 +1,23 @@
+{
+  "name": "exam",
+  "homepage": "https://github.com/zeropv/zeropv.github.io",
+  "authors": [
+    "zeropv <paul.nalivanniy@gmail.com>"
+  ],
+  "description": "exam project",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9",
+    "css-reset": "^2.5.1",
+    "reset-css": "^2.0.2011012603"
+  }
+}
