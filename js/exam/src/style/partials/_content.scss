@@ -82,4 +82,32 @@
 
     	}
 	}
+
+.ideas-list {
+	/*border: 1px solid red;*/
+	overflow: hidden;
+	text-align: center;
+}
+/* ---- .grid-item ---- */
+
+
+
+.grid-item {
+	margin: 0 auto;
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  /*border: 1px solid #0F1AA8;*/
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
 }

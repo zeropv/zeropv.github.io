@@ -37,7 +37,10 @@
 	.footer__links li{
 		display: inline-block;
 	}
-
+	.grid-sizer,.grid-item {
+  		width: 90%;
+		border: 1px solid green;
+	}
 }
 @media screen and (min-width: 769px) and (max-width:930px){
 	.wrapper {
@@ -70,7 +73,10 @@
 		&__links li{
 			display: block;
 		}
-	}	
+	}
+	.grid-sizer,.grid-item {
+  width: 33.333%;
+}
 }
 @media screen and (min-width: 931px) {
 	.wrapper {
@@ -88,6 +94,7 @@
 			width: 158px;
 		}
 	}
+	
 	.footer {
 		.wrapper{
 			padding-top: 30px;
@@ -103,7 +110,10 @@
 		&__links li{
 			display: block;
 		}
-	}	
+	}
+	.grid-sizer,.grid-item {
+  width: 33.333%;
+}	
 }
 
 
