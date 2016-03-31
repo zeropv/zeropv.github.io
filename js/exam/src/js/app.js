@@ -2,23 +2,51 @@ $(function(){
 
 $('.fancybox').fancybox();
 
-var myCarousels = $('.jcarousel').jcarousel();
-// debugger
-		myCarousels.each(function(key,value){
-			console.log(key);
-			$(value).jcarousel('scroll', '+=' + key);
-			// var instance = $(value).data('jcarousel');
-			// instance.scroll('+=1');
+var $myCarousels = $('.jcarousel').jcarousel();
+var $carouselControlsPrev = $('.jcarousel-prev').jcarouselControl();
+var $carouselControlsNext = $('.jcarousel-next').jcarouselControl();
+
+
+
+		$carouselControlsPrev.each(function(key,value){
+			// debugger
+			$(value).jcarouselControl({
+				target: '-=1',
+	        	carousel:$myCarousels[key]
+			})
+		});
+		$carouselControlsNext.each(function(key,value){
+			$(value).jcarouselControl({
+				target: '+=1',
+	        	carousel:$myCarousels[key]
+			})
+		});
+		$myCarousels.each(function(key,value){
+			$(value).jcarousel('scroll', key);
 		});
 
+		$myCarousels.jcarousel('reload',{
+    			animation: 'slow'
+			});
 		
-		
+     //    $('.jcarousel-prev').jcarouselControl({
+     //    	target: '-=1',
+     //    	carousel:myCarousels
+    	// });
+
+    	// $('.jcarousel-next').jcarouselControl({
+     //    	target: '+=1',
+     //    	carousel:myCarousels
+    	// });
+ 
+
+
+
+
         $('[data-jcarousel]').each(function() {
             var el = $(this);
             el.jcarousel(el.data());
         });
-
- 
 
 var words = ['Sport and Activity',
 		   'Wellness and Health',
@@ -94,7 +122,7 @@ $('.input-search' ).on( 'keypress', function ( e ) {
 
 
 var timerId = setInterval(function(){
-	getImages($('.input-search').val());
+	// getImages($('.input-search').val());
 	},100000);
- getImages();
+ // getImages();
 });

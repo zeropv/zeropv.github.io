@@ -7,7 +7,11 @@ Position must be relative!
 .jcarousel {
     position: relative;
     overflow: hidden;
-    width: 285px;
+    width: 300px;
+    display: inline-block;
+    border: 0px solid #000;
+    border-radius: 4px;
+    margin: 0 auto;
 }
 
 /*
@@ -32,4 +36,10 @@ have a fixed width and height (but it's not required).
 .jcarousel li {
     /* Required only for block elements like <li>'s */
     float: left;
+}
+.jcarousel-prev{
+    position: relative;
+    float: left;
+    bottom:100px;
+    font-size: 40px;
 }
