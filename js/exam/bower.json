@@ -11,16 +11,19 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "src/libs",
+    "bower_components",
+    "src",
     "test",
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.9",
-    "css-reset": "^2.5.1",
+    "jquery": "1.9.1",
+    "isotope": "^2.2.2",
     "reset-css": "^2.0.2011012603",
-    "masonry": "^4.0.0",
     "imagesloaded": "^4.1.0",
-    "lodash": "^4.6.1"
-  }
+    "lodash": "^4.6.1",
+    "fancybox": "^2.1.5",
+    "jcarousel": "^0.3.4"
+  },
+  "devDependencies": {}
 }

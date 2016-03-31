@@ -1,15 +1,17 @@
 /* Third party */
 
-@import '../libs/reset-css/_reset.scss';
 
+@import '../libs/reset-css/_reset.scss';
+@import '../libs/fancybox/source/jquery.fancybox.css';
+@import 'jcarousel.css';
 
 /* Custom */
 
 @import '_fonts';
 @import '_variables';
+
 @import 'partials/_header';
-
-@import '_media.scss';
-
 @import 'partials/_content';
 @import 'partials/_footer';
+
+@import '_media.scss';

@@ -1,17 +1,13 @@
 .content{
-	
 	color:#000;
 	header{
-			text-align: center;
-			font-size: 22px;
-			font-family: $montserrat-b;
-			margin:40px 0; 
-		}
+		text-align: center;
+		font-size: 22px;
+		font-family: $montserrat-b;
+		margin:40px 0; 
+	}
 	&__how{
-		background-color: #FAC6C6;
-		/*height: 200px;*/
-		
-		
+		/*background-color: #FAC6C6;*/
 		.jcarousel{
 			display: inline-block;
 			border: 1px solid #000;
@@ -20,7 +16,6 @@
 		}
 	}
 	&__partner{
-		/*background-color: #9FE5F6;*/
 		.partner-list{
 			border: 1px solid red;
 			margin: 0 auto;
@@ -40,20 +35,13 @@
     		color:$rose-color;
     		border-color: $rose-color;
     		background-color: #fff;
-
     	}
 	}
 	&__discover{
-		/*background-color: #9DF6B6;*/
-		/*height: 200px;*/
-		
 		h3 {
 			font-family: $roboto-l;
 			font-size: 18px;
 			margin:10px auto;
-			
-
-
 		}
 		.search-box{
 			margin:15px 15px;
@@ -67,47 +55,36 @@
 				padding: 0 14px;
 				border:1px solid #ccc;
 				box-shadow: 0 1px #eee;
-
-				
 			}
 		}
 		.btn-search {
     		@extend .btn;
-    		/*display: block;*/
     		margin: 0 auto;
     		font-size: 14px;
     		border-color: $rose-color;
     		background-color: $rose-color;
-
-
     	}
 	}
-
-.ideas-list {
-	/*border: 1px solid red;*/
-	overflow: hidden;
-	text-align: center;
-}
-/* ---- .grid-item ---- */
-
-
-
-.grid-item {
-	margin: 0 auto;
-  float: left;
-}
-
-.grid-item img {
-  display: block;
-  max-width: 100%;
-  /*border: 1px solid #0F1AA8;*/
-}
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-
+	.ideas-list {
+		overflow: hidden;
+		text-align: center;
+	}
+	/* ---- .grid-item ---- */
+	.grid-item {
+		margin: 10px 5px;
+	  	float: left;
+	  	position: relative;
+	  	border-radius: 5px;
+	  	& a{
+	  		line-height: 300px;
+	  		font-family: $montserrat-b;
+	  		font-size: 22px;
+	  		color:#fff;
+	  	}
+	}
+	.grid:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
 }

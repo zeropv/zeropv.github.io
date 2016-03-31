@@ -6,7 +6,8 @@ var gulp = require('gulp'),
 	htmlhint = require('gulp-htmlhint'),
 	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
-	prefixer = require('gulp-autoprefixer');
+	prefixer = require('gulp-autoprefixer'),
+	minify = require('gulp-minify-css');
 
 
 var path = {
@@ -29,7 +30,7 @@ var path = {
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
-        css: 'src/style/**/*.scss',
+        css: 'src/style/**/*.{scss,css}',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
         libs: 'src/libs/*.*'
@@ -55,6 +56,7 @@ gulp.task('build:css', wrapPipe(function(success,error){
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error',error))
 		.pipe(prefixer())
+		.pipe(minify())
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(path.build.css));
 }));

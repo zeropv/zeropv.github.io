@@ -2,13 +2,31 @@
 	<section class="content__how">
 	   <div class="wrapper">
 			<header>How Urlaubsglück works?</header>
-			<div class="jcarousel">
+			<div class="jcarousel" data-jcarousel="true" data-name="car1" da>
+				<ul class="jcarousel-list">
+					<li class="jcarousel-item"><img src="img/how1.png"></li>
+					<li class="jcarousel-item"><img src="img/how2.png"></li>
+					<li class="jcarousel-item"><img src="img/how3.png"></li>
+					
+				</ul>
 				
 			</div>
-			<div class="jcarousel">
+			<div class="jcarousel" data-name="car2">
+				<ul class="jcarousel-list">
+					<li class="jcarousel-item"><img src="img/how1.png"></li>
+					<li class="jcarousel-item"><img src="img/how2.png"></li>
+					<li class="jcarousel-item"><img src="img/how3.png"></li>
+					
+				</ul>
 				
 			</div>
-			<div class="jcarousel">
+			<div class="jcarousel" data-name="car3">
+				<ul class="jcarousel-list">
+					<li class="jcarousel-item"><img src="img/how1.png"></li>
+					<li class="jcarousel-item"><img src="img/how2.png"></li>
+					<li class="jcarousel-item"><img src="img/how3.png"></li>
+					
+				</ul>
 				
 			</div>
 	   </div>
@@ -36,10 +54,16 @@
 	<section class="content__discover">
 		<div class="wrapper">
 			<header>Discover holiday activity ideas</header>
-			
+				
 			<div class="ideas-list">
+			
 				<div class="grid">
-  					<div class="grid-sizer"></div>
+  					<!-- <div class="grid-sizer"></div> -->
+  					<script type="text/template" id="ideas-template">
+  						<div class="grid-item<% 
+						var r = _.random(1,7) % 4 %><% if (!(r)){%> grid-item--width2<%}%>" style= "background:url('<%= imageurl %>') center; background-size:cover"><a href="<%= imageurl %>" class="fancybox" rel="group"><%= word %></a>
+						</div>
+  					</script>
 				</div>
 			</div>
 			<header>Discover holiday activity ideas</header>
