@@ -1,19 +1,60 @@
 .content{
+	background-color: #F8BFBF;
 	color:#000;
-	header{
+	&__header{
 		text-align: center;
 		font-size: 22px;
 		font-family: $montserrat-b;
 		margin:40px 0; 
 	}
+	
+.carousel__article{
+	
+	text-align: left;
+	/*border: 1px solid #000;*/
+	/*position: relative;*/
+	/*top: 0;*/
+	/*top:170px;*/
+	/*display: table-cell;*/
+	/*vertical-align: bottom;*/
+	padding: 0 20px;
+	header{
+		text-align: left;
+		margin:0;
+		.btn-step{
+    	background-color: $rose-color;
+    	border-radius: 20px;
+			padding: 0 15px;
+    	line-height: 20px;
+    	font-size: 10px;
+			font-family: $montserrat-r;
+    	color:#fff;
+    	text-transform: uppercase;
+    	letter-spacing: 1.5px;
+		}
+		h1{
+			margin-top: 0px;
+			font-family: $montserrat-b;
+			font-size: 24px;
+			color: #fff;
+			line-height: 31px;
+		}
+	}
+	article {
+		margin-top: 0px;
+		p{
+			color: #fff;		
+			font-family: $roboto-l;
+			font-size:14px;
+		}
+	}
+}	
+
+
+
 	&__how{
 		/*background-color: #FAC6C6;*/
-		.jcarousel{
-			display: inline-block;
-			border: 1px solid #000;
-			border-radius: 4px;
-			margin: 0 auto;
-		}
+		
 	}
 	&__partner{
 		.partner-list{

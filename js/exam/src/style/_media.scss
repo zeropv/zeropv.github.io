@@ -94,10 +94,16 @@
 	.header__content h1{
 		width: 60%;
 	}
-	/*.content .jcarousel{
-		width: 300px;
-		height: 400px;
-	}*/
+	.jcarousel-prev{
+	    top:150px;
+	    left:25px;
+	}
+	.jcarousel-next{
+	    position: absolute;
+	    float: right;
+	    top:150px;
+	    right: 25px;
+	}
 	.search-box{
 		.btn-search{
 			width: 158px;

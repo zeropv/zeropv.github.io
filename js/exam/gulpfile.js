@@ -7,7 +7,10 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
 	prefixer = require('gulp-autoprefixer'),
-	minify = require('gulp-minify-css');
+	minify = require('gulp-minify-css'),
+	spritesmith = require('gulp.spritesmith'),
+	merge = require('merge-stream');
+
 
 
 var path = {
@@ -16,24 +19,28 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
+        sprite: 'build/img/sprite/',
         fonts: 'build/fonts/',
-        libs: 'build/libs/'
+        libs: 'build/libs/',
     },
-    src: { //Пути откуда брать исходники
-        html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-        js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
-        css: 'src/style/main.scss',
-        img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
+    src: { 
+        html: 'src/*.html', 
+        js: 'src/js/main.js',
+        style:'src/style/main.scss',
+        css: 'src/style/',
+        img: 'src/img/*.*', 
+        sprite: 'src/img/sprite/*.*',
         fonts: 'src/fonts/**/*.*',
-        libs: 'src/libs/**/*min.js'
+        libs: 'src/libs/**/*.js'
     },
-    watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
+    watch: { 
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         css: 'src/style/**/*.{scss,css}',
-        img: 'src/img/**/*.*',
+        img: 'src/img/*.*',
+        sprite: 'src/img/sprite/*.*',
         fonts: 'src/fonts/**/*.*',
-        libs: 'src/libs/*.*'
+        libs: 'src/libs/*.*',
     },
     clean: './build'
 };
@@ -52,7 +59,7 @@ gulp.task('build:html', function () {
 });
 
 gulp.task('build:css', wrapPipe(function(success,error){
-  return gulp.src(path.src.css)
+  return gulp.src(path.src.style)
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error',error))
 		.pipe(prefixer())
@@ -62,8 +69,8 @@ gulp.task('build:css', wrapPipe(function(success,error){
 }));
 
 gulp.task('build:libs',function () {
-	gulp.src(path.src.libs)
-		.pipe(gulp.dest(path.build.libs))
+	// gulp.src(path.src.libs)
+		// .pipe(gulp.dest(path.build.libs))
 });
 gulp.task('build:img',function(){
 	gulp.src(path.src.img)
@@ -83,9 +90,44 @@ gulp.task('build:fonts',function(){
 		.pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('build:sprite', function () {
+	  // Generate our spritesheet
+	  var spriteData = gulp.src(path.src.sprite)
+		  .pipe(spritesmith({
+		    imgName: 'sprite.png',
+		    cssName: '_sprite.css',
+		    imgPath: '../img/sprite/sprite.png',
+		    padding: 1
+		  	})
+		  );
+
+	  // Pipe image stream through image optimizer and onto disk
+	  var imgStream = spriteData.img
+	    // DEV: We must buffer our stream into a Buffer for `imagemin`
+	    // .pipe(buffer())
+	    // .pipe(imagemin())
+	    .pipe(gulp.dest(path.build.sprite));
+
+	  // Pipe CSS stream through CSS optimizer and onto disk
+	  var cssStream = spriteData.css
+	    // .pipe(csso())
+	    .pipe(gulp.dest(path.src.css));
+
+	  // Return a merged stream to handle both `end` events
+	  return merge(imgStream, cssStream);
+
+});
 
 
-gulp.task('build',['build:html','build:css','build:libs', 'build:img','build:js','build:fonts']);
+gulp.task('build',[
+	'build:html',
+	'build:libs', 
+	'build:sprite',
+	'build:img',
+	'build:js',
+	'build:fonts',
+	'build:css',
+	]);
 
 gulp.task('watch', function(){
     watch([path.watch.html], function(event, cb) {
@@ -105,6 +147,9 @@ gulp.task('watch', function(){
     });
     watch([path.watch.fonts], function(event, cb) {
         gulp.start('build:fonts');
+    });
+    watch([path.watch.sprite], function(event, cb) {
+        gulp.start('build:sprite');
     });
 });
 

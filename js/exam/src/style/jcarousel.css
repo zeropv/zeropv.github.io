@@ -35,11 +35,32 @@ have a fixed width and height (but it's not required).
 */
 .jcarousel li {
     /* Required only for block elements like <li>'s */
-    float: left;
-}
-.jcarousel-prev{
+    /*float: left;*/
+    display: inline-block;
     position: relative;
+    width: 300px;
+    height: 400px;
+    display: table-cell;
+    vertical-align: bottom;
+    /*border: 1px solid green;*/
+    & img{
+        position: absolute;
+        top: 1px;
+        float: left;
+    }
+
+}
+
+.jcarousel-prev{
+    position: absolute;
     float: left;
-    bottom:100px;
-    font-size: 40px;
+    top:150px;
+    left:25px;
+
+}
+.jcarousel-next{
+    position: absolute;
+    float: right;
+    top:150px;
+    right: 25px;
 }
