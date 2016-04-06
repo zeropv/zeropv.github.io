@@ -6,37 +6,40 @@
 	.header-top{
 		margin: 0 auto;
 		position: relative;
-	}
-	h3{
-		float: left;
-		color: #fff;
-		font-family: $montserrat-b;
-		font-size: 20px;
-		line-height: 38px;
+		/*text-align: center;*/
 	}
 	&__login-box{
-		display: inline-block;
-		float: right;
+		/*display: inline-block;*/
+		/*float: right;*/
 		position: relative;
+		color:#fff;
 		.btn-in.selected, .btn-in:hover {
 			@extend .btn;
 			border-color: #fff;
 		}
 	}
+	h3{
+		/*float: left;*/
+		color: #fff;
+		font-family: $montserrat-b;
+		font-size: 20px;
+		/*line-height: 38px;*/
+	}
 	&__content{
-		position: relative;
-		top:225px;
-		margin: 0 auto;
+		/*position: relative;*/
+		/*top:225px;*/
+		margin: 37px auto 0 auto;
 		text-align: center;
 		color:white;
 		h1{
 			text-align: center;
-			font-size: 52px;
+			font-size: 30px;
 			font-family: $montserrat-b;
 			text-transform: uppercase;
-			margin: 0 auto;
+			/*margin: 40px auto 0 auto;*/
 		}
 		p{
+			margin: 20px auto;
 			font-family: $roboto-l;
 			font-size: 24px;
 		}

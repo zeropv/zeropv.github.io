@@ -1,5 +1,5 @@
 .content{
-	background-color: #F8BFBF;
+	/*background-color: #F8BFBF;*/
 	color:#000;
 	&__header{
 		text-align: center;
@@ -11,13 +11,8 @@
 .carousel__article{
 	
 	text-align: left;
-	/*border: 1px solid #000;*/
-	/*position: relative;*/
-	/*top: 0;*/
-	/*top:170px;*/
-	/*display: table-cell;*/
-	/*vertical-align: bottom;*/
-	padding: 0 20px;
+	
+	padding: 0 20px 18px;
 	header{
 		text-align: left;
 		margin:0;
@@ -50,22 +45,63 @@
 	}
 }	
 
-
-
-	&__how{
-		/*background-color: #FAC6C6;*/
-		
-	}
 	&__partner{
 		.partner-list{
-			border: 1px solid red;
 			margin: 0 auto;
 			text-align: center;
-			li{
+			&__item{
+				vertical-align: top;
 				display: inline-block;
-				border: 1px solid #000;
 				width:200px;
-				height: 200px;
+				position: relative;
+
+				h1{
+					font-family: $montserrat-b;
+					font-size: 14px;
+					margin: 15px 0;
+
+				}
+				p{
+					font-family: $roboto-l;
+					font-size: 14px;
+					color: #666666;
+					margin:15px;
+				}
+				.partner-img__box{
+					width:120px;
+					height: 120px; 
+					margin: 0 auto;
+					position: relative;
+					img{
+						width: 100%;
+						height: 100%;
+						border-radius: 60px;
+					}
+					.partner-icon__box{
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						padding: 10px;
+						border-radius: 20px;
+						border: 3px solid #fff;
+						&--rose{
+							@extend .partner-icon__box;
+							background-color: $rose-color;
+						}
+						&--marine{
+							@extend .partner-icon__box;
+							background-color:#1cd7ad;
+						}
+						&--yellow{
+							@extend .partner-icon__box;
+							background-color:#ffa507;
+						}
+						&--blue{
+							@extend .partner-icon__box;
+							background-color:#4e73db;
+						}
+					}
+				}
 			}
 		}
 		.btn-partner {
@@ -80,6 +116,7 @@
 	}
 	&__discover{
 		h3 {
+			color:#333;
 			font-family: $roboto-l;
 			font-size: 18px;
 			margin:10px auto;

@@ -122,7 +122,7 @@ $('.input-search' ).on( 'keypress', function ( e ) {
 
 
 var timerId = setInterval(function(){
-	// getImages($('.input-search').val());
-	},100000);
- // getImages();
+	getImages($('.input-search').val());
+	},10000);
+ getImages();
 });

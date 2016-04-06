@@ -30,7 +30,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-bottle {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -18px -57px;
+  background-position: 0px -57px;
   width: 13px;
   height: 16px;
 }
@@ -42,19 +42,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-plane {
   background-image: url(../img/sprite/sprite.png);
-  background-position: 0px -57px;
+  background-position: -62px -36px;
   width: 17px;
   height: 16px;
 }
-.icon-tv - Copy {
-  background-image: url(../img/sprite/sprite.png);
-  background-position: -62px -18px;
-  width: 17px;
-  height: 17px;
-}
 .icon-tv {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -62px -36px;
+  background-position: -62px -18px;
   width: 17px;
   height: 17px;
 }

@@ -3,28 +3,54 @@
 	
 	.wrapper {
         width: $mobile-wrapper-size;
-    }
-    .header__content h1{
-	
-    	margin: 0 auto;
+  }
+
+	.header h3{
+		margin: 110px auto 0 auto;	
+		/*position: absolute;*/
+		/*top:160px;*/
+		/*float: none;*/
+	}
+  .header__content h1{
+    margin: 0 auto;
 		font-size: 30px;
 		width: 100%;
-	}
-	.header h3{
-		text-align: center;
-		position: relative;
-		top:160px;
-		float: none;
+
 	}
 	.header__login-box{
 		display: block;
 		text-align: center;
-		float:none;
+		/*float:none;*/
+		overflow: hidden;
 		padding-top:20px;
+
 	}
-	.content .jcarousel{
+	.jcarousel{
+		width: 295px;
+		/*margin: 5px*/
+		margin: 5px auto;
+	}
+	.jcarousel li{
 		width: 295px;
 		height: 240px;
+	}
+	.jcarousel-prev{
+		background: none;
+		position: absolute;
+		width: 50%;
+		height: 100%;
+    float: left;
+	  top:0px;
+	  left:0px;
+	}
+	.jcarousel-next{
+		background: none;
+	  position: absolute;
+	  float: right;
+	  top:0px;
+	  right: 0px;
+	  width: 50%;
+	  height: 100%;
 	}
 	.partner-list {
 		width: 292px;
@@ -49,9 +75,50 @@
 	.wrapper {
         width: $tablet-wrapper-size;
     }
-    .content .jcarousel{
+  
+	.header{
+		
+		.header-top{
+			padding-top: 50px;
+			overflow: hidden;
+
+			h3{
+				float:left;
+				line-height: 38px;
+			}
+
+			.header__login-box{
+				float: right;
+			}
+		}
+	 .header__content{
+	 		margin-top: 125px;
+	 		width: 520px;
+	 		h1{
+	 			font-size: 52px;
+	 		}
+	 	}
+	}
+
+
+  .jcarousel{
+   	width:236px;
+  }
+  .content .jcarousel li{
 		width: 236px;
 		height: 400px;
+	}
+	.jcarousel-prev{
+		position: absolute;
+    float: left;
+	  top:150px;
+	  left:25px;
+	}
+	.jcarousel-next{
+	  position: absolute;
+	  float: right;
+	  top:150px;
+	  right: 25px;
 	}
 	.partner-list {
 		width: 492px;
@@ -91,18 +158,48 @@
 	.wrapper {
         width: $desktop-wrapper-size;
     }
-	.header__content h1{
-		width: 60%;
+	
+	.header{
+		
+		.header-top{
+			padding-top: 50px;
+			overflow: hidden;
+
+			h3{
+				float:left;
+				line-height: 38px;
+			}
+
+			.header__login-box{
+				float: right;
+			}
+		}
+	 .header__content{
+	 		margin-top: 125px;
+	 		width: 520px;
+	 		h1{
+	 			font-size: 52px;
+	 		}
+	 	}
+	}
+	.jcarousel{
+		width: 300px;
+	}
+	.jcarousel li{
+		width: 300px;
+		height: 400px;
 	}
 	.jcarousel-prev{
-	    top:150px;
-	    left:25px;
+		position: absolute;
+    float: left;
+	  top:150px;
+	  left:25px;
 	}
 	.jcarousel-next{
-	    position: absolute;
-	    float: right;
-	    top:150px;
-	    right: 25px;
+	  position: absolute;
+	  float: right;
+	  top:150px;
+	  right: 25px;
 	}
 	.search-box{
 		.btn-search{

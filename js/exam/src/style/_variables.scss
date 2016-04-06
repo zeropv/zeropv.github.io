@@ -35,6 +35,7 @@ $roboto-l:'robotolight', sans-serif;
     height: 34px;
     border: 2px solid transparent;
     border-radius: 20px;
+    
 }
 
 //comon styles
@@ -42,10 +43,10 @@ $roboto-l:'robotolight', sans-serif;
 a {
     display: inline-block;
     text-decoration: none;
-    /*color: #fff;*/
+    color: inherit;
 }
 .wrapper{
 	margin: 0 auto;
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	text-align: center;
 }
