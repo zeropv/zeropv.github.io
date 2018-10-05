@@ -28,7 +28,7 @@ body{
 .contacts {
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	/*right: 0;*/
 	float:right;
 	color: white;
 	margin-bottom: 20px;
